@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Zaki ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff6b6b;
+            --secondary: #ff9e9e;
+            --bg: #fff0f3;
+            --glass: rgba(255, 255, 255, 0.8);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            font-family: 'Quicksand', sans-serif;
+            overflow-x: hidden;
+            color: #4a4a4a;
+        }
+
+        /* Floating Hearts Background */
+        .hearts-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .heart-float {
+            position: absolute;
+            color: var(--secondary);
+            opacity: 0.6;
+            animation: floatUp 10s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-family: 'Pacifico', cursive;
+            color: var(--primary);
+        }
+
+        /* 1. Countdown */
+        .countdown-box {
+            background: var(--glass);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(255, 107, 107, 0.2);
+            margin-bottom: 40px;
+            border: 2px solid white;
+        }
+
+        .timer {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #d63031;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .time-unit {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            min-width: 60px;
+        }
+        .label { font-size: 0.5em; font-weight: normal; display: block; }
+
+        /* 2. Flip Box Love Story */
+        .flip-container {
+            perspective: 1000px;
+            width: 100%;
+            height: 500px; /* Adjust height for text */
+            margin-bottom: 40px;
+            cursor: pointer;
+        }
+
+        .flipper {
+            transition: 0.8s;
+            transform-
